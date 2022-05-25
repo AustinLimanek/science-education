@@ -1,5 +1,9 @@
+body{
+    background:rgb(7, 126, 153);
+}
+
 nav {
-    background: black;
+    background: rgb(24, 73, 119);
     margin: 0px;
     text-align: center;
   }

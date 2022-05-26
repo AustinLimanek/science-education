@@ -23,11 +23,31 @@
     </header>
 
     <section class="input">
-        First Name: <input id="first-name" width="5px">
+        First Name: <input id="first-name">
         Last Name: <input id="last-name">
     </section>
 
-    <button onclick="myFunc()">Click Me</button>
+    <hr>
+
+    <section class="button">
+    <button onclick="myFunc();">Click Me</button>
+    <button id="say">Use your name</button>
+    </section>
+
+    <script>
+        function fulnam() {
+            var firnam = document.getElementById('first-name').value;
+            var lasnam = document.getElementById('last-name').value;
+    
+            var html = "Hello " + firnam + " " + lasnam + ", welcome to our science exposition!!!";
+    
+            document.getElementById('result').innerHTML = html;
+        }
+    
+        document.getElementById('say').addEventListener('click', fulnam);
+    </script>
+
+    <div id="result"></div>
 
     <main>
         <section>
@@ -41,7 +61,7 @@
             </p>
         </section>
 
-        <section id="physics">
+        <section class="info" id="physics">
             <h2>Physics</h2>
             <img src="images/physics.png" width="250"/>
             <p>
@@ -58,14 +78,26 @@
             </p>
             <h3>Who is a physicist?</h3>
             <ul>
+                <script>
+                    function YOU1() {
+                        var firnam1 = document.getElementById('first-name').value;
+                        var lasnam1 = document.getElementById('last-name').value;
+                
+                        var html1 = firnam1 + " " + lasnam1 + ", when you ask questions about the world around you";
+                
+                        document.getElementById('name1').innerHTML = html1;
+                    }
+                
+                    document.getElementById('say').addEventListener('click', YOU1);
+                </script>
                 <li>Experimentors at international labs such as CERN</li>
                 <li>Researchers at universities and colleges around the world</li>
                 <li>Astronomers who look up at the stars</li>
-                <li><em>YOU</em> when you ask questions about the world around you</li>
+                <li><div id="name1"></div></li>
             </ul>
         </section>
 
-        <section id="chemistry">
+        <section class="info" id="chemistry">
             <h2>Chemistry</h2>
             <img src="images/chemistry.png" width="300"/>
             <p>
@@ -81,14 +113,26 @@
             </p>
             <h3>Who is a chemist?</h3>
             <ul>
+                <script>
+                    function YOU2() {
+                        var firnam2 = document.getElementById('first-name').value;
+                        var lasnam2 = document.getElementById('last-name').value;
+                
+                        var html2 = firnam2 + " " + lasnam2 + ", when you ask questions about how liquids, gases, and solids will change when you change the environment around them";
+                
+                        document.getElementById('name2').innerHTML = html2;
+                    }
+                
+                    document.getElementById('say').addEventListener('click', YOU2);
+                </script>
                 <li>Chemical Engineers</li>
                 <li>Doctors who research vaccines</li>
-                <li>Material scientists that engineer plastics, metals, and fabrics</li>
-                <li><em>YOU</em> when you ask questions about how liquids, gases, and solids will change when you change the environment around them</li>
+                <li>Materials scientists that engineer plastics, metals, and fabrics</li>
+                <li><div id="name2"></div></li>
             </ul>
         </section>
 
-        <section id="biology">
+        <section class="info" id="biology">
             <h2>Biology</h2>
             <img src="images/biology.jpg" width="300" height="150"/>
             <p>Biology is the language of how chemistry and physics comes together to construct structure in living organisms. Large molecules <br>
@@ -102,14 +146,26 @@
             </p>
             <h3>Who is a biologist?</h3>
             <ul>
+                <script>
+                    function YOU3() {
+                        var firnam3 = document.getElementById('first-name').value;
+                        var lasnam3 = document.getElementById('last-name').value;
+                
+                        var html3 = firnam3 + " " + lasnam3 + ", when you ask questions about your health, heritage, and environment";
+                
+                        document.getElementById('name3').innerHTML = html3;
+                    }
+                
+                    document.getElementById('say').addEventListener('click', YOU3);
+                </script>
                 <li>Neuro surgeons</li>
                 <li>Veterinarians who treat your pets</li>
                 <li>Ecologist who study the way species interact with their ecosystems and environment</li>
-                <li><em>YOU</em> when you ask questions about your health, your heritage, and your environment</li>
+                <li><div id="name3"></div></li>
             </ul>
         </section>
 
-        <section id="geology">
+        <section class="info" id="geology">
             <h2>Geology</h2>
             <img src="images/geology.jpg" width="300"/>
             <p>
@@ -118,15 +174,33 @@
             </p>
             <h3>Who is a geologist?</h3>
             <ul>
+                <script>
+                    function YOU4() {
+                        var firnam4 = document.getElementById('first-name').value;
+                        var lasnam4 = document.getElementById('last-name').value;
+                
+                        var html4 = firnam4 + " " + lasnam4 + ", when you ask questions about the land you live on and the history of the solar system";
+                
+                        document.getElementById('name4').innerHTML = html4;
+                    }
+                
+                    document.getElementById('say').addEventListener('click', YOU4);
+                </script>
                 <li>surveyors</li>
                 <li>Archaeologists when they date fossils or lost civilizations that they discover</li>
-                <li>Volcanologists who studies volcanoes</li>
-                <li><em>YOU</em> when you ask questions about the land you live on and the history of the solar system</li>
+                <li>Volcanologists who study volcanoes</li>
+                <li><div id="name4"></div></li>
             </ul>
+        </section>
+
+        <section class="question">
+            <h2>Questions?</h2>
+            What is your favorite scientific discipline: physics, chemistry, biology, or geology? Type it here: <input id="scisub">
+            <button onclick="submit()">Submit</button>
         </section>
     </main>
 
-    <button onclick="highlight()">Click if you are a physicist, chemist, biologist, and geologist!!!</button>
+    <button onclick="hilig()">Click if you are a physicist, chemist, biologist, and geologist!!!</button>
     
     <footer>
         <p>&copy; 2022, ScienceViewEd</p>

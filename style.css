@@ -1,5 +1,18 @@
-body{
+body, html{
     background:rgb(7, 126, 153);
+    margin: 0px;
+}
+
+h1{
+  font-size: 64px;
+  text-align: center;
+  border: 5px black double;
+}
+
+h2{
+  text-align: center;
+  font-size: 36px;
+  text-decoration-line: underline;
 }
 
 nav {
@@ -19,7 +32,55 @@ nav {
     font-family: futura, sans-serif;
   }
 
-section.input {
+  nav a{
+    text-decoration: none;
+    color: white;
+  }
+
+  nav a:hover{
+    background-color: rgba(40, 131, 136, 0.628);
+    color: rgb(176, 156, 200);
+  }
+
+div#result{
+  text-align:center;
+  color:rgb(4, 63, 108);
+  font-size: 20px;
+  margin-top: 10px;
+  border: 1px rgba(9, 48, 98, 0.839) solid;
+  margin-right: 40px;
+  background-color: aquamarine;
+}
+
+div#name1{
+  color: aqua;
+}
+
+div#name2{
+  color: aqua;
+}
+
+div#name3{
+  color: aqua;
+}
+
+div#name4{
+  color: aqua;
+}
+
+  section.input {
   background: rgba(56, 177, 165, 0.773);
   font: black;
+  text-align: center;
+}
+section.button{
+  text-align: center;
+}
+section.info{
+  border: 5px dotted black;
+  margin-bottom: 5px;
+}
+section.question{
+  border: 5px double rgb(18, 84, 95);
+  padding-bottom: 10px;
 }

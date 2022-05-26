@@ -16,31 +16,31 @@ h2{
 }
 
 nav {
-    background: rgb(24, 73, 119);
-    margin: 0px;
-    text-align: center;
-  }
+  background: rgb(24, 73, 119);
+  margin: 0px;
+  text-align: center;
+}
 
-  nav ul {
-    padding: 0px;
-  }
+nav ul {
+  padding: 0px;
+}
 
-  nav li {
-    display: inline-block;
-    padding: 5px;
-    margin-right: 40px;
-    font-family: futura, sans-serif;
-  }
+nav li {
+  display: inline-block;
+  padding: 5px;
+  margin-right: 40px;
+  font-family: futura, sans-serif;
+}
 
-  nav a{
-    text-decoration: none;
-    color: white;
-  }
+nav a{
+  text-decoration: none;
+  color: white;
+}
 
-  nav a:hover{
-    background-color: rgba(40, 131, 136, 0.628);
-    color: rgb(176, 156, 200);
-  }
+nav a:hover{
+  background-color: rgba(40, 131, 136, 0.628);
+  color: rgb(176, 156, 200);
+}
 
 div#result{
   text-align:center;

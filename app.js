@@ -1,4 +1,6 @@
 
+
+
 function myFunc(){
     alert("You are a true scientist. Keep experimenting!");
 }
@@ -6,6 +8,10 @@ function myFunc(){
 function hilig(){
     alert("I couldn't agree more!")
 }
+
+//function printName(){
+//    if (firnam == "" )
+//}
 
 function submit(){
     if (document.getElementById('scisub').value == "physics") {
@@ -27,3 +33,4 @@ function submit(){
         alert("I don't believe that was one of the choices?");
     }
 }
+

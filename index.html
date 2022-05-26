@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Science Education</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="app.js"></script>
 </head>
 
 <body>
@@ -20,6 +21,13 @@
             </ul>   
         </nav>
     </header>
+
+    <section class="input">
+        First Name: <input id="first-name" width="5px">
+        Last Name: <input id="last-name">
+    </section>
+
+    <button onclick="myFunc()">Click Me</button>
 
     <main>
         <section>
@@ -84,8 +92,8 @@
             <h2>Biology</h2>
             <img src="images/biology.jpg" width="300" height="150"/>
             <p>Biology is the language of how chemistry and physics comes together to construct structure in living organisms. Large molecules <br>
-                called proteins, lipids, RNA, and DNA. Although there are <em>many</em> other molecules that make up organisms, these <br>
-                are the major building blocks of life on Earth - and possibly other locations in the universe.
+                called proteins, lipids, RNA, and DNA make up the building blocks of cells, tissues, and organs. Although there are <em>many</em> 
+                other molecules <br> that make up organisms, these are the major building blocks of life on Earth - and possibly other locations in the universe.
             </p>
             <p>
                 Biology is also where the study of medicine has its roots. In the subfield biochemistry, the study of virsus, bacterium, and animals <br>
@@ -96,7 +104,7 @@
             <ul>
                 <li>Neuro surgeons</li>
                 <li>Veterinarians who treat your pets</li>
-                <li>Ecologist who study the way species interact with their ecosystems and environments</li>
+                <li>Ecologist who study the way species interact with their ecosystems and environment</li>
                 <li><em>YOU</em> when you ask questions about your health, your heritage, and your environment</li>
             </ul>
         </section>
@@ -117,6 +125,8 @@
             </ul>
         </section>
     </main>
+
+    <button onclick="highlight()">Click if you are a physicist, chemist, biologist, and geologist!!!</button>
     
     <footer>
         <p>&copy; 2022, ScienceViewEd</p>

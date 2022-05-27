@@ -27,10 +27,27 @@ function submit(){
         alert("Sometimes confused with geography, but the two go hand in hand due to mountain ranges and rivers often defining the borders between countries");
     }
     else if (document.getElementById('scisub').value == ""){
-        alert("You need to type something into the box before submitting")
+        alert("You need to type something into the box before submitting");
     }
     else {
         alert("I don't believe that was one of the choices?");
     }
 }
+
+function printStars(){
+    let rank = document.getElementById('rank').value;
+    if(rank<=5 && rank>=1){
+    let print = "";
+    for (let i = 1; i <= rank; i++){
+        print = print + " " + "<img src='images/neutronstar.jpg' width='40px' />";
+    }
+    document.getElementById('neutrons').innerHTML = print + " Yes, these are neutron stars!!!";
+    return;
+    }
+    else{
+        document.getElementById('neutrons').innerHTML = "Please input a valid entry: 1-5."
+    }
+}
+
+//document.getElementById('sta').addEventListener('click', printStars);
 

@@ -68,11 +68,17 @@ div#name4{
   color: aqua;
 }
 
-  section.input {
+div#neutrons{
+  text-align: center;
+  padding-top: 10px;
+}
+
+section.input {
   background: rgba(56, 177, 165, 0.773);
   font: black;
   text-align: center;
 }
+
 section.button{
   text-align: center;
 }
